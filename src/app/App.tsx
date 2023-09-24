@@ -1,5 +1,5 @@
 //import react
-import React from 'react';
+// import React from 'react';
 
 //import Dev
 import AllRoutes from '../routes/AllRoutes';
