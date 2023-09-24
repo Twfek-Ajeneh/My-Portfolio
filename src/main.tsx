@@ -1,10 +1,21 @@
+//import Core
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+
+//import Third Party
+import {BrowserRouter} from 'react-router-dom';
+
+//import Dev
+import App from './app/App.tsx'
+
+//import style sheet
+import './normalize.css';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+	<React.StrictMode>
+		<BrowserRouter basename={import.meta.env.DEV ? '/' : '/My-Portfolio/'}>
+			<App />
+		</BrowserRouter>
+	</React.StrictMode>,
 )
